@@ -1,52 +1,45 @@
-.form-container {
-    width: 600px;
-    margin: 0 auto;
-    border: 1px solid #95A0A7;
-    box-sizing: border-box;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-}
+.form-container{
+ width: 600px;
+ height: 600px;
+ border: 1px solid rgb(241, 235, 235);
+ box-sizing: border-box;
+ display: flex;
+ border-radius: 8px;
+ justify-content: center;
+ margin: 80px auto;
+ box-shadow:5px 5px rgb(245, 208, 140);;
 
-.form-title {
+}
+.form-title{
     font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
     color: #2A414F;
     font-weight: 400;
 }
-
-.input-group{
-    margin-bottom: 20px;
-}
-
-.input-group label {
+lebel{
     display: block;
     margin-left: 5px;
 }
-
-.input-group input {
+input{
     width: 415px;
     height: 55px;
     border: 1px solid #95A0A7;
-    box-sizing: border-box;
     border-radius: 5px;
     font-size: 24px;
-    padding-left: 5px;
+    margin-bottom: 20px
 }
-
 .form-submit{
     width: 415px;
     height: 55px;
-    background-color: rgba(255, 153, 0, 0.3);
-    border-radius: 5px;
+    margin-top: 30px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(245, 208, 140);
+    border-radius: 6px;
     border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-.form-submit:hover{
-    background-color: rgba(255, 153, 0, 0.5);
-}
 
+}
 .form-link{
-    color: #FF9900;
+    color: rgb(245, 208, 140) ;
     text-decoration: none;
 }

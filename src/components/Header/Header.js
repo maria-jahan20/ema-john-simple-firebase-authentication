@@ -7,17 +7,29 @@ import logo from '../../images/Logo.svg';
 import './Header.css';
 
 const Header = () => {
+    const [user]=useAuthState(auth);
+
+    const logOut=()=>{
+        signOut(auth);
+    }
     return (
-        <nav className='header'>
-            <img src={logo} alt="" />
-            <div>
-                <Link to="/shop">Shop</Link>
-                <Link to="/orders">Orders</Link>
-                <Link to="/inventory">Inventory</Link>
-                <Link to="/about">About</Link>
-                <Link to="/login">Login</Link>
-            </div>
-        </nav>
+      <nav className="header">
+        <img src={logo} alt="" />
+        <div>
+          <Link to="/">Shop</Link>
+          <Link to="/orders">Orders</Link>
+          <Link to="/inventory">Inventory</Link>
+          <Link to="/about">About</Link>
+          {user ? (
+            <button onClick={logOut}>Sign Out</button>
+          ) : (
+            <Link to="/login">Login</Link>
+          )}
+          {
+            <p>{user?.displayName}</p>
+          }
+        </div>
+      </nav>
     );
 };
 

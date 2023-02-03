@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "ema-john-simple-85c01"
-  }
+    "default": "ema-john-simple-3-29a7a",
+    "build": "ema-john-simple-3-29a7a"
+  },
+  "targets": {}
 }
